@@ -1,0 +1,19 @@
+Lab 8
+1. Write a function Fact to find the factorial of a given number. Using this function,
+compute NCR in the main function.
+2. Write a function CornerSum which takes as a parameter, no. of rows and no. of columns of a matrix and returns the sum of the elements in the four corners of the matrix.
+Write a main function to test the function.
+3. Write a recursive function FIB to generate nth Fibonacci term. Write a main program to print first N Fibonacci terms using function FIB.
+[Hint: Fibonacci series is 0, 1, 1, 2, 3, 5, 8 ...]
+4. Define a structure for a student with a nested structure for the address (including street, city, and zip code). Write a program to input and display student details along
+with their address (Use nested structure concept)
+
+
+Lab 9
+5. Define a structure for a product with members for product ID, name, and price. Write a program to create array of products using pointers, input their details, and display
+them. (Use the concept of pointers and structures)
+6. Define a structure for a cricket player with members for player name, team name, and batting average. Write a program to input data for multiple players and sort them by
+batting average. (Use the concept of array and structures)
+7. To read a file and write into another file converting all characters to upper case.
+8. To count and display the number of characters, words and lines of a file.
+9. To print the last n characters of a file. Input ‘file name’ and ‘n’ value from console.

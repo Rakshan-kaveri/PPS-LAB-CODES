@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1724836175 source:/home/cb/Desktop/240911546/LAB3/palindrone/palindrone.c
+	<stdio.h>
+
+1724837214 source:/home/cb/Desktop/240911546/LAB3/prime.c
+	<stdio.h>
+
