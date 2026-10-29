@@ -9,6 +9,11 @@ int main()
 	int root;
 	printf("Enter a,b,c \n");
 	scanf("%f %f %f",&a,&b,&c);
+	if(a==0)
+	{
+		printf("a cannot be 0 for a quadratic equation\n");
+		return 0;
+	}
 	d=b*b-4*a*c;
 	if(d>0)
 	{

@@ -18,7 +18,7 @@ int main()
         printf("prime numbers present in the array are\n");
             for(i=0;i<n;i++)
             {
-                    t=0;
+                    t=(a[i]<2)?1:0;
                      for(k=2;k<a[i];k++)
                 {
                         if(a[i]%k==0)

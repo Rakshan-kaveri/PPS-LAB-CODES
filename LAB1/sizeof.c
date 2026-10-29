@@ -11,12 +11,12 @@ int main()
 	double d;
 	long int i;
 	long double l;
-	printf("size of datatype int is %ld\n",sizeof(a));
-	printf("size of datatype char is %ld\n",sizeof(c));
-	printf("size of datatype float is %ld\n",sizeof(f));
-	printf("size of datatype double is %ld\n",sizeof(d));
-	printf("size of datatype long int is %ld\n",sizeof(i));
-	printf("size of datatype long double is %ld\n",sizeof(l));
+	printf("size of datatype int is %zu\n",sizeof(a));
+	printf("size of datatype char is %zu\n",sizeof(c));
+	printf("size of datatype float is %zu\n",sizeof(f));
+	printf("size of datatype double is %zu\n",sizeof(d));
+	printf("size of datatype long int is %zu\n",sizeof(i));
+	printf("size of datatype long double is %zu\n",sizeof(l));
 	return 0;
 }
 

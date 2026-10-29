@@ -6,30 +6,23 @@ date:23/10/2024
 #include<string.h>
 int main()
 {
-    int flage=1,i,n=0;
+    int flag=1,i,n;
     char a[100];
     printf("Enter a String\n");
-    gets(a);
-    for(i=0;a[i]!='\0';i++)
-    {
-        n++;
-    }
-
+    fgets(a,sizeof(a),stdin);
+    a[strcspn(a,"\n")]='\0';
+    n=strlen(a);
     for(i=0;i<n/2;i++)
     {
         if(a[i]!=a[n-i-1])
         {
-            flage=0;
+            flag=0;
             break;
         }
     }
-    if(flage==1)
-    {
-        printf("Entered String is a palindrome");
-    }
+    if(flag==1)
+        printf("Entered String is a palindrome\n");
     else
-        printf("Entered String is not a palindrome");
-
+        printf("Entered String is not a palindrome\n");
     return 0;
-
 }

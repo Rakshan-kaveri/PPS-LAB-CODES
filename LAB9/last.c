@@ -5,8 +5,6 @@ date:6 /11/2024*/
 #include<stdlib.h>
     void acess(char *filename,int n)
     {
-        int i=0;
-        char tem[1000];
           FILE* ptr1 ;
     ptr1 = fopen(filename,"r");
     if(ptr1==NULL)
@@ -37,7 +35,7 @@ fseek(ptr1, 0, SEEK_END);
  {  int n;
     char filename[100];
     printf("input a file name and number of last characters to be printed\n");
-    scanf("%s",filename);
+    scanf("%99s",filename);
     scanf("%d",&n);
     acess(filename,n);  
     return 0;

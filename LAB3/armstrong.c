@@ -22,5 +22,6 @@ int main()
         printf("\n%d is an armstrong number",num);
     }
     else
-        printf("%d is not a armstrong number",num);
+        printf("%d is not an armstrong number",num);
+    return 0;
 }

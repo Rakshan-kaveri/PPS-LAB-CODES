@@ -7,10 +7,10 @@ week:1
 int main()
 {
 	float radius,area,volume;
-	printf("Enter the radius of the circle\n");
+	printf("Enter the radius of the sphere\n");
 	scanf("%f",&radius);
-	volume=(4*3.14*radius*radius*radius)/3;
-	area=4*3.14*radius*radius;
+	volume=(4*3.14159*radius*radius*radius)/3;
+	area=4*3.14159*radius*radius;
 	printf("volume of the sphere is %f\n",volume);
 	printf("surface area of the sphere is %f",area);
 	return 0;

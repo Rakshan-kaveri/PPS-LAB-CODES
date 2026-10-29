@@ -17,6 +17,11 @@ int main()
 
         printf("Enter element to be inserted and its position\n");
             scanf("%d%d",&ele,&pos);
+        if(pos<1||pos>n+1||n>=100)
+        {
+            printf("Invalid position\n");
+            return 0;
+        }
         for(i=n;i>=pos;i -- )
         {
             a[i]=a[i-1];

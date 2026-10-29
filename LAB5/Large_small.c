@@ -1,4 +1,4 @@
-/*1.Find the largest and smallest edement in a  1D array
+/*1.Find the largest and smallest element in a  1D array
 week: 5
 date:11/09/2024
 */

@@ -6,33 +6,30 @@ week:03
 #include<stdio.h>
 int main()
 {
-    int prime,num,i,count,p=0,c=0;
+    int num,count,isprime,p=0,c=0;
     do
     {
-        printf("Enter a number:");
+        printf("Enter a number (-1 to stop):");
         scanf("%d",&num);
         if(num==-1)
-        {
             break;
-        }
-        if(num==1)
+        if(num<2)
         {
-            printf("1 is neither prime nor composite\n");
+            printf("%d is neither prime nor composite\n",num);
             continue;
         }
+        isprime=1;
         count=2;
-        i=1;
-        while(num>count)
+        while(count*count<=num)
         {
             if(num%count==0)
             {
-              i=0;
-              c++;
-              break;
+                isprime=0;
+                break;
             }
             count++;
         }
-        if(i!=0)
+        if(isprime)
         {
             printf("%d is a prime number\n",num);
             p++;
@@ -40,9 +37,11 @@ int main()
         else
         {
             printf("%d is a composite number\n",num);
+            c++;
         }
     }
-    while(i!=-1);
-    printf("prime number is entered %d times\n",p);
-    printf("composite number is entered %d times\n",c);
+    while(num!=-1);
+    printf("prime numbers entered: %d\n",p);
+    printf("composite numbers entered: %d\n",c);
+    return 0;
 }

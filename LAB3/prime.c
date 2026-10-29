@@ -4,24 +4,24 @@ week:03
 #include<stdio.h>
 int main()
 {
-    int start,end,i,count;
+    int start,end,num,count,isprime;
     printf("Enter two limits\n");
-    scanf("%d %d",&start ,&end);
-    while(start<end)
+    scanf("%d %d",&start,&end);
+    num=start;
+    while(num<=end)
     {
-    i=0;
-    count=2;
-    while(count<start)
-    {
-    if(start%count==0)
-    {
-        i=1;
+        isprime=(num>=2);
+        count=2;
+        while(count*count<=num && isprime)
+        {
+            if(num%count==0)
+                isprime=0;
+            count++;
+        }
+        if(isprime)
+            printf("%d\t",num);
+        num++;
     }
-
-    count++;
-    }
-    if(i==0)
-            printf("%d\t",start);
-    start++;
-    }
+    printf("\n");
+    return 0;
 }

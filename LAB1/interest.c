@@ -1,6 +1,6 @@
 /*5 program to compute and display simple and compound interest
 
-date:18/04/2024
+date:14/08/2024
 week:1*/
 #include<stdio.h>
 #include<math.h>

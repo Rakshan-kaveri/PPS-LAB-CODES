@@ -3,39 +3,36 @@ week: 7
 date:23/10/2024
 */
 #include<stdio.h>
-void main(){
-int i, l, pos, len1=0, len2=0, flag1 = 0, flag2 = 0;
-char str[100], word[100];
-printf("Enter string: ");
-gets(str);
-printf("Enter word to be deleted: ");
-gets(word);
+#include<string.h>
+int main()
+{
+    char str[100],word[100],result[100]="",*tok;
+    int found=0;
+    printf("Enter string: ");
+    fgets(str,sizeof(str),stdin);
+    str[strcspn(str,"\n")]='\0';
+    printf("Enter word to be deleted: ");
+    fgets(word,sizeof(word),stdin);
+    word[strcspn(word,"\n")]='\0';
 
-
-for(i = 0; str[i]!= '\0'; i++){
-len1 += 1;
-}
-for(i = 0; word[i]!= '\0'; i++){
-len2 += 1;
-}
-
-
-for(i = 0; i < len1; i++){
-    if(str[i] == word[0] && str[i - 1] == ' '){
-        for(l = 0; l < len2; l++){
-            if(str[i + l] != word[l]){
-                flag1 = 1;
-                break;
-                }
-            }
-        if(flag1 == 0 && str[i + l + 1] != ' ')
-            pos = i;
+    /* split the sentence into words and copy every word except the first match */
+    tok=strtok(str," ");
+    while(tok!=NULL)
+    {
+        if(!found && strcmp(tok,word)==0)
+            found=1;
+        else
+        {
+            if(result[0]!='\0')
+                strcat(result," ");
+            strcat(result,tok);
         }
+        tok=strtok(NULL," ");
     }
 
-for(i = pos; i < len1; i++){
-    str[i] = str[i + len2];
-    }
-puts(str);
+    if(found)
+        printf("Sentence after deleting \"%s\": %s\n",word,result);
+    else
+        printf("\"%s\" not found in the sentence\n",word);
+    return 0;
 }
-

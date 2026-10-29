@@ -1,0 +1,11 @@
+# compiled files
+*.exe
+*.o
+*.out
+a.out
+# Code::Blocks project files
+*.cbp
+*.depend
+*.layout
+obj/
+bin/

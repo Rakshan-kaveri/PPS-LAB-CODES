@@ -1,4 +1,4 @@
-/*program to find the smallest among three numbers using conditional operator
+/*program to find the smallest among three numbers using nested if-else
 week:02
 date 21/08/2024
 */
